@@ -1,36 +1,225 @@
-#Opener{
-margin-left: 50px;
-margin-top:50px;
+*{
+box-sizing:border-box;
+margin:0;
+
 }
 
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 32px;
-  
-    font-weight: 600;
-margin-bottom:10px;
-transition: all .3s ease-in-out;
+/* Navbar, logo and quick nav links */
+#navbar{
+width:100%;
+
+
+padding: 16px 32px;
+
+transition: all .30s ease-out;
+
+
 }
 
-h1:hover{
+#navbar :hover{
     cursor: pointer;
-    font-size: 40px;
-    color:blue;
-    transition: all .3s ease-in-out;
+    background-color:rgb(0,0,0,0.2);
+         
+  width:50px;
+  height:50px;
+    transition: all .30s ease-out;
+}
+
+#logo{
+width:40px;
+height:40px;
+background:url(images/Logo_image.png);
+background-size: cover;
+margin: 0 auto;
+
+}
+
+#logo :hover{
+
+ 
+    transition: all .30s ease-out;
+   
+    
+
+}
+
+/* Font Settings */
+h1{
+    font-family : Roboto;
+    font-weight : bold;
+    font-size : 3em;
+    color : #000000;
+    line-height: 1.2em;
     
 }
 
+myname:hover{
+font-size: 3.5em;
+
+
+}
 p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:14px;
+    font-family : Roboto;
+    font-size : .8em;
+    color : #000000;
+    font-weight:400;
+
+
+}
+
+/*My Photo */
+#photo{
+opacity:95%;
+height:100%;
+width:410px;
+position:absolute;
+z-index: -9;
+background:url(images/adams_photo_real.jpg);
+clip:(0px,100%, 210px, 0px);
+background-position: center;
+background-position-y: -80px;
+}
+
+#wrapper{
+    padding-bottom: 100px;
+    margin:0px auto;
+   
+}
+/* Side box  */
+#opener{
+padding-top:120px;
+padding-left: 120px;
+padding-bottom:50px;
+max-width:500px;
+float:left;
+clear:left;
+
+
+}
+
+
+#namebox{
+
+padding-right:40px;
+border-right: 1px solid grey;
+padding-top:20px;
+padding-left:20px;
+padding-bottom:200px;
+border-right: 1px solid rgb(0,0,0);
+
+
+
+}
+
+ /* Box to the right*/
+#content{
+   display:inline-block;
+   height:200px;
+   
+   padding:0px 0px 20px 20px;
+   margin-top:120px;
+   margin-left:100px;
+   
+}
+
+
+#cmenu{
+
+
+margin-right:20px;
+
+
+}
+
+
+
+#contentheader{
+margin-bottom:10px;
+
+}
+
+#exercises{
+    font-size : 1.8em;
+    font-weight:600;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+table{
+ 
+ 
+ display:inline-block;
+ text-align: center;
+}
+
+
+td{
+padding: 0px 100px;
+padding-top:5px;
+padding-bottom:20px;
     
-    font-weight:100px;
+    
 }
 
-#Grant{
-margin-top:50px;
-max-width: 400px;
-Max-height:400px
+td :hover{
+    font: size 1em;
+    font-weight:500;
+
+}
+
+table{
+    margin:0 auto;
+    font-family : Roboto;
+    font-size : .8em;
+    
+    font-weight:400;
+}
+
+td :first-child {
 
 
 }
+
+/* Project Content */
+
+#pcontainer{
+margin: 0px 50px;
+margin-top:150px;
+
+
+}
+
+#pwrapper{
+  
+    padding: 2px 0;
+    transition: all .30s ease-in;
+}
+
+#pwrapper :hover{
+   font-weight:600;
+   font-size:1em;
+    
+    transition: all .2s ease-in;
+}
+
+#projects{
+    width:100%;
+ border-top: 1px solid rgb(0,0,0);
+   
+    
+    text-align: center;
+}
+
+#ptitle{
+    font-size:1.8em;
+    margin-bottom:30px;
+    margin-top:20px;
+}
+
+/*Formatting Links */
+a{
+    text-decoration: none;
+    color:#000000;
+    
+}
+

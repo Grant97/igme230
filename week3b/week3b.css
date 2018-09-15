@@ -74,6 +74,6 @@ a[href^="http"]:after {
     font-size: 90%;
 }
 
-a[href^="http://en.wikipedia"]:after {
+ a[href^="http://en.wikipedia"]:after {
     content: none;
 } 
