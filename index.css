@@ -156,10 +156,31 @@ table{
 td{
 padding: 0px 100px;
 padding-top:5px;
-padding-bottom:20px;
-    
+padding-bottom:5px;
     
 }
+
+#tabledata{
+    font-size:1.2em;
+    font-weight:600;
+    color:rgba(0,0,0,0.8);
+}
+
+#tablename{
+    font-size:1.2em;
+    font-weight:600;
+    color:rgba(0,0,0,0.8);
+
+}
+
+#tablelink{
+    font-size:1.2em;
+    font-weight:600;
+    color:rgba(0,0,0,0.8);
+
+}
+
+
 
 td :hover{
     font: size 1em;
@@ -175,10 +196,6 @@ table{
     font-weight:400;
 }
 
-td :first-child {
-
-
-}
 
 /* Project Content */
 
@@ -223,3 +240,14 @@ a{
     
 }
 
+@media(min-width:1024px){
+
+    
+}
+
+
+
+@media(min-width:375px){
+
+    
+}
