@@ -6,6 +6,16 @@ font-family: sans-serif;
 #wrapper {
     max-width: 1000px;  
     margin: 0 auto;
+    flex-direction: column;
+}
+
+#wrapper{
+    display:flex;
+}
+
+main{
+    display:flex;
+    flex-direction: row;
 }
 
 p, li {
