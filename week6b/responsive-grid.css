@@ -52,8 +52,8 @@ img{
 }
 
 @supports (display:grid){
-.warning{
-    display:none;
-}
-
+    .warning{
+        display:none;
+    }
+    
 }
