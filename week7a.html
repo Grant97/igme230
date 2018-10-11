@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<title>HTML Forms exercise</title>
+
+
+</head>
+
+
+<body>
+<p>This is my page</p>
+
+<!---To setup a form make sure to always list it's action and method 
+attributes.-->
+
+<!-- The action attribute specifies where the forms data will be sent-->
+
+
+<!-- The method attribute specifies the HTTP method the code will send the
+data, with "get" or "post"-->
+
+
+<form action="/my-handling-form-page" method="POST">
+
+    <div>
+<label for="name">Name:</label>
+<input type="text" id="name" name="user_name">
+</div>
+
+
+<!-- To create a proper form you need to supply it with a label and 
+    input pair-->
+
+    <!-- The label informs the user of the input's purpose-->
+
+      <!-- It is common practice to make the label's for attribute
+    the same as the input's id in order to link them. This allows
+the user to click on the label and highlight the input corresponding to it.-->
+
+<div>
+<label for="mail">E-mail:</label>
+<input type="email" id="mail" name="user_mail">
+</div>
+
+ <!-- The input's type attribute is particularly important
+as it specifies how the input goes about getting information.-->
+
+<!-- The input's name attribute helps organize the data for the server
+so it can collect and work with data by name-->
+
+<div>
+<label for="msg">Message:</label>
+<textarea id="msg" name="user_message"></textarea>
+</div>
+
+<div>
+    <button type="submit">Send your message</button>
+</div>
+
+
+    
+</form>
+
+<style>
+
+form{
+    /*Just to center the form on the page */
+    wmargin: 0 auto;
+    width: 400px;
+    /* To see the outline of the form */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+
+}
+
+
+form div + div {
+margin-top: 1em;
+
+}
+
+label{
+/* To make sure that all labels have the same size and are properly aligned.*/
+display:inline-block;
+width:90px;
+text-align: right;
+
+}
+
+input, textarea{
+/* To make sure that all text fields have the same font settings 
+By default, textareas have a monospace font */
+font: 1em sans-serif;
+
+/* To give the same size to all text fields */
+width: 300px;
+box-sizing: border-box;
+
+/* To harmonize the look & feel of the text field border */
+border: 1px solid #999;
+
+
+
+}
+
+input:focus, textarea:focus{
+    /* To give a little highlight on active elements */
+    border-color: #000;
+}
+
+textarea{
+/* To properly align multiline text fields with their labels */
+vertical-align: top;
+
+/* To give enough room to type some text */
+height: 5em;
+
+}
+
+.button{
+/* To position the buttons to the same position of the text fields */
+padding-left: 90px; /*same size as the label elements */
+
+}
+
+button{
+/* This extra margin represent roughly the same space as the space between
+the labels and their text fields */
+margin-left: .5em;
+
+}
+
+
+
+
+</style>
+
+
+
+</body>
+
+</html>
