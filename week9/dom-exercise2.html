@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>DOM Exercise 2</title>
+
+    <style>
+         @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i');
+        html { font-family: Lato; font-size: 16px; }
+        main { max-width: 800px; margin: 0 auto; border: 1px dotted black; padding: 0 10px;} h1 { font-weight: 900;}
+    </style>
+
+
+</head>
+
+<body>
+    <main>
+        <h1>Happy Little Clouds</h1>
+
+        <h2>Info</h2>
+        <p>If what you're doing doesn't make you <strong>happy</strong> - you're doing the wrong thing. How to paint. That's easy. What to paint. That's much harder. We spend so much of our life looking - but never seeing. I want everybody to be happy. That's what it's all about. Remember how free clouds are. They just lay around in the sky all day long.</p>
+
+        <h2>Links</h2>
+        <ul>
+            <li><a href="https://www.bobrosslipsum.com/">Bob Ross Lipsum</a></li>
+            <li><a href="https://bobross.com/">Official Bob Ross Page</a></li>
+        </ul>
+            
+            
+    </main>
+
+    <script>
+        
+        // 1 - Create a <footer>
+let footer = document.createElement("footer");
+
+// 2 - set the title attribute, which gives us a tooltip 
+footer.setAttribute("title","Don't copy this page without my permission!");
+
+// 3 - create the text of the <footer>
+let textNode = document.createTextNode("© 20XX by Ima Student");
+
+// 4 - insert the text into the <footer>
+footer.appendChild(textNode);
+
+// 5 - insert the <footer> at the end of the <body>
+document.body.appendChild(footer);
+
+// 6 - center the contents of footer 
+footer.style.textAlign = "center";
+
+// 7 - this code does the same thing as #1-#6 above, but without 
+// document.createTextNode() or element.setAttribute()
+
+let footer2 = document.createElement("footer");
+footer2.title = "I'm serious! Don't copy it!";
+footer2.innerHTML = "&copy; 20XX by Ima Student"
+document.body.appendChild(footer2);
+footer2.style.textAlign = "center";
+
+// 8 - get a reference to the official bob ross site list item
+
+let targetListItem = document.querySelector("li a[href*='bobross.com']").parentNode;
+
+// 9 - create a new list item 
+
+let newListItem = document.createElement("li");
+    newListItem.innerHTML = "<a href='https://www.youtube.com/channel/UCxcnsr1R5Ge_fbTu5ajt8DQ'>Bob Ross YouTube Channel</a>";
+
+// 10 - insert the new list item into the existing list, before the target item
+    
+let unorderedList = document.querySelector("ul");
+    unorderedList.insertBefore(newListItem,targetListItem);
+
+    // 11 - Delete a footer
+    document.body.removeChild(document.querySelector("footer"));
+                
+                
+            
+    </script>
+</body>
+
+</html>
