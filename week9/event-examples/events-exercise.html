@@ -42,33 +42,42 @@
 
 <script>
 /* Write your code here! */
-let colors = document.querySelectorAll('input');
+var colors = document.querySelectorAll('input');
 
-let p = document.querySelector('#info');
+var p = document.querySelector('#info');
 
-let btn = document.querySelector('button');
+var btn = document.querySelector('button');
+var n3 = 0;
+
+for (let n = 0; n < colors.length; n++){
+let n2 = colors[n];
+n2.onclick = function (e){
+	p = p.innerHTML = "Your current selection is " + n2.value;
+	n3 = n2.value;
+}
+
+}
+
+let btnClick = function (e){
+
+	p = p.innerHTML = "Your Final Selection is " + n3;
+	console.log(p);
+	return p;
+}
+
+btn.addEventListener("click", btnClick);
+
+
+
+
+
+
+
+/*
 let r = 0;
 let g = 0;
 let b = 0;
 
-btn.onclick = function (e) {
-
-if(r == 1){
-
-	p = p.innerHTML = "Your final selection is " + document.getElementById('rbutton').value ;
-}
-if(g == 1){
-
-p = p.innerHTML = "Your final selection is " + document.getElementById('gbutton').value ;
-}
-if(b == 1){
-
-p = p.innerHTML = "Your final selection is " + document.getElementById('bbutton').value ;
-}
-else{
-	p = p.innerHTML = "You haven't selected any parameters";
-
-}
 
 
 
@@ -80,7 +89,7 @@ else{
 document.getElementById('rbutton').onclick = function (e) {
 r = 1;
 g = 0;
-b = 0; console.log(r);
+b = 0; console.log(1)
 
 
 
@@ -113,6 +122,24 @@ b = 1;
 
 
 
+btn.onclick = function (e) {
+
+if(r == 1){
+
+	p = p.innerHTML = "Your final selection is " + document.getElementById('rbutton').value ;
+}
+if(g == 1){
+
+p = p.innerHTML = "Your final selection is " + document.getElementById('gbutton').value ;
+}
+if(b == 1){
+
+p = p.innerHTML = "Your final selection is " + document.getElementById('bbutton').value ;
+}
+else{
+	p = p.innerHTML = "You haven't selected any parameters";
+
+}
 
 
 
@@ -120,6 +147,7 @@ b = 1;
 
 
 }
+*/
 
 
 
