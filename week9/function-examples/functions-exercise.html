@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Week 9 Homework</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i');
+       html { font-family: Lato; font-size: 16px; }
+       main { max-width: 800px; margin: 0 auto; border: 1px dotted black; padding: 0 10px;} h1 { font-weight: 900;}
+   </style>
+
+</head>
+
+<body>
+    <main>
+        <h1>My Favorites</h1>
+        <h2>My Favorite Colors</h2>
+    
+        <ol id="colorsList">
+    
+        </ol>
+    
+        <h2>My Favorite Foods</h2>
+    
+        <ol id="foodsList">
+    
+        </ol>
+    
+      </main>
+    
+    <script>
+        "use strict";
+        let colors = []; // add some colors
+
+        colors = ["Blue", "Red", "Green"];
+
+        let foods = []; // add some foods
+
+        foods = ["Apples", "Bannas", "Oranges"];
+console.log(foods);
+        let cList = document.getElementById('colorsList');
+        let fList = document.getElementById('foodsList');
+
+/*
+        //For Loop for the Foods
+         for(let i = 0; i < foods.length; i++){
+
+let f2 = foods[i];
+let fText = f2;
+let f3 = "Food #" + (i + 1) + " - " + fText;
+let fContent = document.createTextNode(fText);
+fList.appendChild(fContent);
+
+console.log(f3); 
+
+} 
+
+
+         //For Loop for the Colors
+         for(let i = 0; i < colors.length; i++){
+
+            let c2 = colors[i];
+            let cText = c2;
+            let c3 = "Color #" + (i + 1) + " - " + cText;
+            let cContent = document.createTextNode(cText);
+           cList.appendChild(cContent);
+        
+        } 
+        
+        
+*/
+
+
+         function createList(listElement,array){
+    // you write the rest
+    for (let n = 0; n < array.length; n++){
+let n2 = array[n];
+
+let nText = document.createTextNode(n2);
+listElement.appendChild(nText);
+
+
+    }
+    }
+    let colorData = createList(cList, colors);
+    let foodData = createList(fList, foods);
+
+  
+
+
+
+
+
+
+    /*    for (let i = 0; i < colors.length; i++) {
+    let c2 = colors[i];
+    let currentText = c2.innerHTML;
+    c2.innerHTML = "#" + (i + 1) + " - " + currentText;
+        }
+*/
+
+    </script>
+    
+</body>
+
+</html>
