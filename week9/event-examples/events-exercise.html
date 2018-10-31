@@ -42,112 +42,59 @@
 
 <script>
 /* Write your code here! */
-var colors = document.querySelectorAll('input');
 
-var p = document.querySelector('#info');
+//Initializing variables
+let myinfo = document.querySelector('#info');
+let mysubmit = document.querySelector('button');
+let mylegend = document.querySelector('#colorform legend');
+let myarray = document.querySelectorAll('input');
 
-var btn = document.querySelector('button');
-var n3 = 0;
+//Variable to store color data
+var selectedColor;
 
-for (let n = 0; n < colors.length; n++){
-let n2 = colors[n];
-n2.onclick = function (e){
-	p = p.innerHTML = "Your current selection is " + n2.value;
-	n3 = n2.value;
-}
-
-}
-
-let btnClick = function (e){
-
-	p = p.innerHTML = "Your Final Selection is " + n3;
-	console.log(p);
-	return p;
-}
-
-btn.addEventListener("click", btnClick);
+//Testing out my variables to make sure they work.
+console.log(myarray);
+console.log(mylegend);
+console.log(mysubmit);
 
 
+//Setting up the function for the radio buttons
+function uponClick() {
+
+myinfo.innerHTML = "You have selected " + this.value; 
+selectedColor = this.value;
 
 
-
-
-
-/*
-let r = 0;
-let g = 0;
-let b = 0;
-
-
-
-
-
-
-
-
-
-document.getElementById('rbutton').onclick = function (e) {
-r = 1;
-g = 0;
-b = 0; console.log(1)
-
-
-
-
-	p = p.innerHTML = "Your current selection is " + document.getElementById('rbutton').value;
 
 }
 
-document.getElementById('gbutton').onclick = function (e) {
-	r = 0;
-g = 1;
-b = 0; 
 
-	p = p.innerHTML = "Your current selection is " + document.getElementById('gbutton').value;
+
+//Creating for loop to initialize the radio button's on click event listener.
+for (let v of myarray){
+	v.addEventListener("click", uponClick);
+
+console.log(v);
 
 }
 
-document.getElementById('bbutton').onclick = function (e) {
-
-		r = 0;
-g = 0;
-b = 1; 
-
+//Setting up my button function
+function Button() {
 	
-	p = p.innerHTML = "Your current selection is " + document.getElementById('bbutton').value;
 
-}
+myinfo.innerHTML = "Your final selection is " + selectedColor;
 
-
-
-
-
-btn.onclick = function (e) {
-
-if(r == 1){
-
-	p = p.innerHTML = "Your final selection is " + document.getElementById('rbutton').value ;
-}
-if(g == 1){
-
-p = p.innerHTML = "Your final selection is " + document.getElementById('gbutton').value ;
-}
-if(b == 1){
-
-p = p.innerHTML = "Your final selection is " + document.getElementById('bbutton').value ;
-}
-else{
-	p = p.innerHTML = "You haven't selected any parameters";
-
-}
-
-
-
-
+//Testing out the change of the legend's color
+mylegend.style.color = selectedColor;
 
 
 }
-*/
+
+mysubmit.addEventListener("click", Button);
+
+
+
+
 
 
 
