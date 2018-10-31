@@ -38,67 +38,51 @@
         let foods = []; // add some foods
 
         foods = ["Apples", "Bannas", "Oranges"];
-console.log(foods);
-        let cList = document.getElementById('colorsList');
-        let fList = document.getElementById('foodsList');
 
-/*
-        //For Loop for the Foods
-         for(let i = 0; i < foods.length; i++){
+        //Creating vars that call to the lists
+        var mycolorslist = document.querySelector("#colorsList");
+        var myfoodslist = document.querySelector("#foodsList");
 
-let f2 = foods[i];
-let fText = f2;
-let f3 = "Food #" + (i + 1) + " - " + fText;
-let fContent = document.createTextNode(fText);
-fList.appendChild(fContent);
+        //Using Console to verify the array content.
 
-console.log(f3); 
+        console.log(foods);        
 
-} 
-
-
-         //For Loop for the Colors
-         for(let i = 0; i < colors.length; i++){
-
-            let c2 = colors[i];
-            let cText = c2;
-            let c3 = "Color #" + (i + 1) + " - " + cText;
-            let cContent = document.createTextNode(cText);
-           cList.appendChild(cContent);
-        
-        } 
-        
-        
-*/
-
-
-         function createList(listElement,array){
-    // you write the rest
-    for (let n = 0; n < array.length; n++){
-let n2 = array[n];
-
-let nText = document.createTextNode(n2);
-listElement.appendChild(nText);
-
-
-    }
-    }
-    let colorData = createList(cList, colors);
-    let foodData = createList(fList, foods);
-
+//Creating the function to start the process of filling the lists.
+function createList (myArray, orderedList){
   
+  //For loop populating the Ordered lists
+    for(let n of myArray){
 
+        //Creating List Items
+            let listData = document.createElement("li");
 
+            //Calling to the console to check my values
+            console.log(n);
 
+             let arrayinput = document.createTextNode(n);
 
+             listData.appendChild(arrayinput);
 
+             orderedList.appendChild(listData);
 
-    /*    for (let i = 0; i < colors.length; i++) {
-    let c2 = colors[i];
-    let currentText = c2.innerHTML;
-    c2.innerHTML = "#" + (i + 1) + " - " + currentText;
+            console.log(listData);
+
+            //Currently struggling with every value that array input receives is undefined *SOLVED*
+       
         }
-*/
+
+
+}
+
+createList(colors, mycolorslist);
+createList(foods, myfoodslist);
+       
+
+      
+       
+
+
+
 
     </script>
     
