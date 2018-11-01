@@ -79,6 +79,8 @@ main {
 
 @keyframes entrance{
 from{transform: translateX(-2000px);}
+
+
 to {transform: translateX(0);}
 }
 
