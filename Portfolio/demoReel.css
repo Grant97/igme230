@@ -1,0 +1,632 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-size:16px;
+    font-family: 'Roboto';
+    overflow:auto;
+}
+
+/* General Styles that aren't in nav, main, or footer
+or are just reused */
+
+
+#Branding{
+display:flex;
+justify-content: space-between;
+width:18%;
+margin-top:1%;
+
+}
+
+#Branding a{
+    color:#1a1a1a;
+}
+
+.iconElement{
+    width:25%;
+    margin: 2% 0;
+    
+}
+
+a{
+    text-decoration:none;
+}
+
+
+/* Nav & related elements */
+
+nav{
+width:100%;
+
+padding-top: 0.5%;
+padding-bottom: 0.25%;
+
+background-color: rgba(255,255,255,.7);
+position:fixed;
+top:0%;
+
+}
+
+
+#navContentContainer{
+    display:flex;
+    justify-content: space-between;
+    margin: 0 150px;
+}
+
+/* SVG elements */
+
+.st0{fill:none;
+    stroke:#000000;
+    stroke-width:0.25;
+    stroke-miterlimit:10;
+}
+
+.st1{fill:#4D4D4D;}
+.st2{fill:#EFEFEF;}
+.st3{fill:#FFFFFF;}
+
+#logoContainer{
+width:27%;
+margin: 0 0;
+display:none;
+}
+
+#logoName{
+    font-family: 'Roboto';
+    font-size:1.2rem;
+    font-weight:700;
+    margin: 2% 0;
+}
+
+#portfolioNavigationLinks{
+    display:flex;
+    justify-content: space-between;
+    width:25%;
+    margin: 2% 0;
+}
+
+#portfolioNavigationLinks a{
+
+   
+    color:#1a1a1a;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-size: .91rem;
+    font-weight:300;
+}
+
+
+#hamburgerMenu{
+    display:none;
+}
+
+#side-menu{
+    
+    display:block;
+}
+
+.sideNav{
+    height:100%;
+    width:0;
+    position:fixed;
+    z-index:1;
+    top:0;
+    background-color:#111;
+    opacity:0.9;
+    overflow-x:hidden;
+    transition:0.5s;
+
+}
+
+.sideNav a{
+    padding: 10;
+    text-decoration: none;
+    font-size:1.3rem;
+    margin:30% 45%;
+    
+    font-weight:500;
+    color:#ccc;
+    display:block;
+    transition:0.3s;
+}
+
+
+.sideNav a:hover{
+
+    font-size:1.5rem;
+    color:red;
+    transition:0.3s;
+
+}
+
+.sideNav .buttonClosed{
+position:absolute;
+top:2%;
+left:85%;
+margin:0;
+font-size:3rem;
+}
+
+.sideNav .buttonClosed:hover{
+font-size:3.5rem;
+color:red;
+transition:0.3s;
+
+}
+
+.hamburgerMenuLine{
+    fill:none;
+    stroke:#999999;
+    stroke-width:3.7132;
+    stroke-miterlimit:10;
+}
+
+
+
+/* Main content & related elements */
+
+main{
+
+    width:100%;
+    margin-bottom: 10%;
+    margin-top:10%;
+    
+}
+
+#workContainer{
+    margin-top:5%;
+    margin: 0 10%;
+
+
+}
+
+.previewImage{
+    width:50%;
+    height:auto;
+    margin: 0 25%;
+    margin-top:10%;
+   
+    
+   
+    margin-bottom:10%;
+    
+    
+}
+
+.previewImage1{
+    width:100%;
+    height:100%;
+}
+
+
+.previewImage2{
+    width:45%;
+    height:45%;
+}
+
+
+
+#openingContainer{
+
+width:55%;
+
+
+
+}
+
+#openingSubHeader{
+font-size:1.25rem;
+font-weight:300;
+color:rgb(0,0,0,.5);
+margin-bottom:2%;
+
+}
+
+#openingHeader{
+font-size:3.5rem;
+font-weight:600;
+margin-bottom:10%;
+
+}
+
+#details{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:1%;
+
+}
+
+#detailDescriptions{
+    display:flex;
+    justify-content: space-between;
+}
+
+.titleBold{
+    text-align: left;
+    font-weight: 700;
+    color:#1a1a1a;
+    margin-bottom:5px;
+}
+
+.titleDescription{
+    font-weight:300;
+    text-align: left;
+
+}
+
+.bodyText{
+line-height:2rem;
+font-weight: 300;
+
+}
+
+#imageGallery{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:5%;
+    margin-top:5%;
+}
+
+
+#videoPlayer{
+    margin: 30% 15%;
+    width:150%; 
+    height:100% 
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer & Footer elements */
+
+footer{
+
+   
+    width:100%;
+    
+    
+   
+    padding: 0 150px;
+    padding-bottom: 50px;
+}
+
+/* Additional Footer Container*/
+#footerContainer{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+/* Footer divider */
+#dividerContainer{
+width:100%;
+
+}
+
+#divider{
+
+background-color:#1a1a1a;
+height:1.3px;
+margin:30px 80px;
+
+}
+
+
+/*SVG arrow Style */
+.dt0{
+    fill:none;
+    stroke:#333333;
+    stroke-width:2.5578;
+    stroke-miterlimit:10;
+}
+
+#footerArrow{
+    width:1.7%;
+margin:auto;
+margin-bottom:20px;
+
+}
+
+/*Div containing the text */
+#summaryAboutGrant{
+    width:32%;
+    
+ 
+}
+
+/* Footer text elements */
+#summaryHeader{
+font-family: 'Roboto';
+font-size:2rem;
+font-weight:700;
+margin-bottom: 20px;
+}
+
+#summaryText{
+    font-family: 'Roboto';
+    font-size:1rem;
+    line-height: 2rem;
+    font-weight:400;
+    margin-bottom: 25px;
+
+}
+
+#emailButton{
+    
+    background-color: #1a1a1a;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+    cursor: pointer;
+}
+
+
+#emailText{
+    font-family: 'Roboto';
+    font-size:1rem;
+    font-weight:500;
+    color:#efefef;
+    
+}
+
+
+#backgroundTextFooter{
+    font-size:10rem;
+    font-weight: 700;
+    opacity: .08;
+    color:#1a1a1a;
+    position:relative;
+    top:-32%;
+    left:-70%;
+    
+}
+
+/*Footer link elements */
+
+#redirectionLinks{
+
+    padding: 9% 0;
+}
+
+#linkContainer{
+    display:flex;
+    justify-content: space-between;
+    width:500px;
+}
+
+.footerLink{
+    font-family: 'Roboto';
+    font-size:1.15rem;
+    color:rgba(0,0,0,.4);
+    
+    font-weight:700;
+    cursor: pointer;
+    
+ 
+
+}
+
+
+/*Copyright tag */
+
+#copyright{
+    font-size: .85rem;
+    
+    margin-top: 3%;
+
+}
+
+/*Mobile Only stuff that needs to be turned off. */
+#mobileOnlyContainer{
+    display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Phone View Media Queries */
+
+@media only screen and  (max-width: 992px){
+    /*General Changes */
+        html{
+    font-size:14px
+    
+        }
+    
+    /*Nav Bar Content */
+    #logoContainer{
+        display:none;
+    }
+    
+    #navContentContainer{
+    margin: 0 15%;
+    }
+    
+    
+    #Branding{
+        width:100%;
+    }
+    
+    #logoName{
+        font-weight:700;
+    }
+    
+    #portfolioNavigationLinks{
+    display:none;
+    
+    }
+    
+    
+#hamburgerMenu{
+    display:block;
+    width:9%;
+}
+
+.hamburgerMenuLine{
+    display:block;
+    stroke:rgba(0,0,0,.8);
+}
+
+    
+
+/*Main / Resume Content */
+
+
+main{
+    margin-bottom:12%;
+    margin-top:20%;
+   
+}
+
+#workContainer{
+    margin: 0 12%;
+    margin-bottom:12%;
+    margin-top:30%;
+    display:block;
+    
+
+}
+
+html{
+    font-size:12px;
+}
+
+
+#openingContainer{
+    width:100%;
+}
+
+#videoPlayer{
+    
+    width:100%; 
+    height:100%;
+    margin:25% 0;
+}
+
+
+
+
+
+/* Footer Conter */
+
+footer{
+
+    padding:0 14%;
+    padding-bottom: 20px;
+    }
+    
+    
+        #footerContainer{
+    display:block;
+    
+    
+    }
+    
+    #footerArrow{
+        width:4%;
+        margin-bottom: 4%;
+    }
+    
+    .footerLink{
+        font-size:.90rem;
+        
+    }
+    
+    #summaryAboutGrant{
+        width:100%;
+    }
+    
+    #summaryText{
+        margin-bottom:5%;
+    }
+    
+    
+    
+    #summaryHeader{
+        font-size:1.5rem;
+    }
+    
+    #summaryText{
+    
+        font-size:.75rem;
+        line-height:1.5rem;
+    }
+    
+    #emailButton{
+    margin-top:7%;
+    display:block;
+    
+    }
+    
+    #emailText{
+    
+        font-size:.8rem;
+    }
+    
+    
+    #redirectionLinks{
+        padding-top:15%;
+        padding-bottom:4%;
+    }
+    
+    #linkContainer{
+        width:100%;
+    }
+    
+    
+    #copyright{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size:.65rem;
+    }
+    
+    #backgroundTextFooter{
+        display:none;
+    }
+    
+    }
+    
+
+
+
+

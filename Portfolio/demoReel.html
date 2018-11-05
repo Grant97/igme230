@@ -1,0 +1,340 @@
+<!DOCTYPE HTML>
+
+<html lang = "en">
+
+
+<head>
+    <!--Meta data for the page-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Links to external documents-->
+<link rel="stylesheet" href="demoReel.css">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,300i,400,500,700" rel="stylesheet">
+
+
+<title>Grant Adams' Portfolio Redesign: Demo Reel</title>
+
+</head>
+
+
+<body>
+    <!--Main page structure: Nav, Main, Footer-->
+
+
+<!--Nav bar element: contains Logo/name, & Redirection links -->
+<nav>
+       
+        <!--Container for the contents of the nav bar.-->
+    <div id="navContentContainer">
+    
+    <!--Container for the logo with my name-->
+    <div id="Branding">
+    
+            <div class="iconElement" id="logoContainer">
+        
+                    <!-- Container for my SVG logo design for responsive adjusting-->
+                <figure id = "logoSvgContainer">
+                
+            <svg id="portfolioLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" >
+                <style type="text/css">
+                    
+                </style>
+                <g>
+                    <g>
+                        <path class="st0" d="M52.05,1.1c0,0-43.02,5.33-43.02,14.51s34.18,10.81,34.18,23.07S19.09,60.91,19.09,68.8
+                            c0,12,20.96,9.98,20.96,9.98"/>
+                        <path class="st0" d="M52.13,1.1c0,0-40.01,5.33-40.01,14.51S46.3,26.42,46.3,38.68S22.17,60.91,22.17,68.8
+                            c0,12,20.96,9.98,20.96,9.98"/>
+                        <path class="st0" d="M52.21,1.1c0,0-37.01,5.32-37.01,14.51s34.18,10.81,34.18,23.07S25.26,60.91,25.26,68.8
+                            c0,12,20.96,9.98,20.96,9.98"/>
+                        <path class="st0" d="M52.29,1.1c0,0-34,5.32-34,14.51s34.18,10.81,34.18,23.07S28.34,60.91,28.34,68.8c0,12,20.96,9.98,20.96,9.98
+                            "/>
+                        <path class="st0" d="M52.37,1.1c0,0-30.99,5.32-30.99,14.51s34.18,10.81,34.18,23.07S31.43,60.91,31.43,68.8
+                            c0,12,20.96,9.98,20.96,9.98"/>
+                        <path class="st0" d="M52.45,1.1c0,0-27.99,5.32-27.99,14.51s34.18,10.81,34.18,23.07S34.51,60.91,34.51,68.8
+                            c0,12,20.96,9.98,20.96,9.98"/>
+                        <path class="st0" d="M52.53,1.1c0,0-24.98,5.32-24.98,14.51s34.18,10.81,34.18,23.07S37.6,60.91,37.6,68.8
+                            c0,12,20.96,9.98,20.96,9.98"/>
+                    </g>
+                    <g>
+                        <polygon class="st1" points="35.15,72.8 9.04,49.22 37.39,33.5 65.17,58.2 		"/>
+                        <polygon class="st2" points="37.39,33.5 44.64,8.8 18.9,22.27 9.04,49.22 		"/>
+                        <polygon class="st3" points="44.64,8.8 37.39,33.5 65.17,58.2 70.96,30.39 		"/>
+                    </g>
+                </g>
+                </svg>
+                
+                
+            </figure>
+                
+                
+                
+                </div>
+            
+                <!--My name that goes alongside my logo-->
+                <a href="index.html" alt="link back to the home page.">
+                        <h1 id="logoName">GRANT ADAMS</h1>
+                </a>
+    
+    
+    
+    
+    </div>
+    
+    <!--Hamburger Menu -->
+    <div id="hamburgerMenu">
+    <a href="#" onclick="openSlideMenu()">
+        <!-- svg of the menu-->
+    <svg version="1.1" id="hamburgerMenuIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+       
+           
+        <g>
+            <line class="hamburgerMenuLine" x1="2.5" y1="10.17" x2="47.37" y2="10"/>
+            <line class="hamburgerMenuLine" x1="2.57" y1="25.09" x2="47.43" y2="24.91"/>
+            <line class="hamburgerMenuLine" x1="2.63" y1="40" x2="47.5" y2="39.83"/>
+        </g>
+        </svg>
+        
+    </a>
+    
+    
+    
+    
+    </div>
+        
+        <!-- Div for the redirection links on my portfolio -->
+        <div id="portfolioNavigationLinks">
+                <a href="index.html">WORK</a>
+            <a href="demoReel.html">REEL</a>
+            <a href="aboutPage.html">ABOUT</a>
+            <a href="resume.html">RESUME</a>
+        
+        
+        
+        </div>
+    
+    
+    </div>
+    
+        
+    
+    
+    
+    </nav>
+    
+    <!--Menu that appears upon clicking the hamburger menu-->
+    <div id="side-menu" class="sideNav">
+        <!-- Close Button -->
+        <a href="#" class="buttonClosed" onclick="closeSlideMenu()">&times;</a>
+    
+        <!--Links-->
+        <a href="index.html">WORK</a>
+        <a href="demoReel.html">REEL</a>
+        <a href="aboutPage.html">ABOUT</a>
+        <a href="resume.html">RESUME</a>
+    
+    
+    
+    </div>
+    
+    <!--Javascript for the opening and closing of the menus-->
+    <script>
+    
+    /*Short Function for giving the menu it's width */
+    function openSlideMenu(){
+        document.getElementById('side-menu').style.width = '100vw';
+       
+       
+    }
+    
+    /*Short Function for taking away the menu's width */
+    function closeSlideMenu(){
+        document.getElementById('side-menu').style.width = '0px';
+       
+    }
+    
+    </script>
+    
+
+
+<!--Main element of Portfolio home page: contains projects divs which contain project 
+imgs, text, and links -->
+<main>
+
+<div id="workContainer">
+
+        <div id="openingContainer">
+
+      
+            <h1 id="openingSubHeader"></h1>
+            <h1 id="openingHeader">Demo Reel</h1>
+          
+            <div id="details">
+                    
+                <div>
+                    <p class="titleBold">ROLE</p>
+                    <p class="titleDescription">Motion Design</p>
+                </div>
+
+                <div> <p class="titleBold">WHEN</p>
+                    <p class="titleDescription">2016-2017</p>
+                </div>
+                   
+                <div>
+                    <p class="titleBold">CLIENT</p>
+                    <p class="titleDescription">Self Study</p>
+                </div>
+
+            </div>
+
+            <video id="videoPlayer"controls>
+                    <source src="Demo_Reel.mp4" type="video/mp4">
+
+
+            </video>
+           
+
+
+    </div>
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Footer starts here-->
+
+ <!-- Graphical divider Separating the footer from the body -->
+ <!-- Adding a container to the divider so I can create margins in the div so that
+it doesn't just fill the entire width of the screen -->
+<section id ="dividerContainer">
+        <section id="divider"></section>
+</section>
+
+
+
+
+ <!-- SVG Arrow to redirect to the top of the screen-->
+
+ <a title="Scroll to the Top" href=#top >
+
+    <figure class="iconElement" id="footerArrow">
+       
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20" >
+            <polyline class="dt0" points="26,16.66 14.63,5 4,16.66 "/>
+            </svg>
+            
+</figure>
+
+
+ </a>
+
+  
+
+<!--Actual start of the footer-->
+<footer>
+
+    <!--Graphical Elements-->
+    
+   
+
+
+    
+  
+   
+
+<!-- Created an additional footer container to fix the padding issue when floating
+the summary-->
+    <div id = "footerContainer">
+
+    <!--Section containing text elements-->
+<div id = "summaryAboutGrant">
+        <h1 id ="summaryHeader">Hey reader!</h1>
+        <p id = "summaryText">The name’s Grant Adams, I’m a motion graphics designer who is passionate about 2-D & 3-D animation. I love meeting new people, so feel free to send me an email if you want to learn more about me and my work!</p>
+        
+        <!--Email link button-->
+        <a href="mailto:gaa6230@g.rit.edu" alt="">
+                <section id = "emailButton"> 
+                        <p id = "emailText">The Magical copy my email button</p>
+                    
+                    </section>
+
+
+        </a>
+   
+        </div>
+        
+        
+        
+        <div id = "redirectionLinks">
+      
+            <!--Adding a container for the links in order to create a flexbox
+            to evenly space the links-->
+            <div id = "linkContainer">
+
+                    <a href="https://www.behance.net/adamsgrantf3f2" alt="Link to my Behance"><p class = "footerLink">Behance</p> </a>
+                    <a href="https://www.linkedin.com/in/grant-adams-44baa7105/" alt="Link to my Linkedin"><p class = "footerLink">Linkedin</p> </a>
+                    <a href="https://twitter.com/" alt="Currently don't have an active twitter so you'll just go go regular twitter.Link to twitter"><p class = "footerLink">Twitter</p> </a>
+                    <a href="https://vimeo.com/user79236428" alt="Link to my Vimeo"><p class = "footerLink">Vimeo</p> </a>
+                    
+    
+        </div>
+            
+        
+        </div>
+    </div>
+        
+        
+
+
+
+    <div id= "copyright">© 2018 - Design / Code by Grant Adams</div>
+
+
+    </div>
+
+</footer>
+
+
+<!--  <h1 id = "backgroundTextFooter">What's Up</h1>   -->
+
+
+</body>
+
+
+
+
+
+
+
+
+</html>

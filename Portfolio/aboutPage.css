@@ -1,0 +1,541 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-size:16px;
+    font-family: 'Roboto';
+}
+
+/* General Styles that aren't in nav, main, or footer
+or are just reused */
+
+
+#Branding{
+display:flex;
+justify-content: space-between;
+width:18%;
+margin-top:1%;
+}
+
+#Branding a{
+    color:#1a1a1a;
+}
+
+.iconElement{
+    width:25%;
+    margin: 2% 0;
+    
+}
+
+a{
+    text-decoration:none;
+}
+
+
+/* Nav & related elements */
+
+nav{
+width:100%;
+
+padding-top: 0.5%;
+padding-bottom: 0.25%;
+
+background-color: rgba(255,255,255,.7);
+position:fixed;
+top:0%;
+
+}
+
+
+#navContentContainer{
+    display:flex;
+    justify-content: space-between;
+    margin: 0 150px;
+}
+
+/* SVG elements */
+
+.st0{fill:none;
+    stroke:#000000;
+    stroke-width:0.25;
+    stroke-miterlimit:10;
+}
+
+.st1{fill:#4D4D4D;}
+.st2{fill:#EFEFEF;}
+.st3{fill:#FFFFFF;}
+
+#logoContainer{
+width:27%;
+margin: 0 0;
+display:none;
+}
+
+#logoName{
+    font-family: 'Roboto';
+    font-size:1.2rem;
+    font-weight:700;
+    margin: 2% 0;
+}
+
+#portfolioNavigationLinks{
+    display:flex;
+    justify-content: space-between;
+    width:25%;
+    margin: 2% 0;
+}
+
+#portfolioNavigationLinks a{
+
+   
+    color:#1a1a1a;
+
+}
+
+
+nav a{
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-size: .91rem;
+    font-weight:300;
+}
+
+
+#hamburgerMenu{
+    display:none;
+}
+
+#side-menu{
+    
+    display:block;
+}
+
+.sideNav{
+    height:100%;
+    width:0;
+    position:fixed;
+    z-index:1;
+    top:0;
+    background-color:#111;
+    opacity:0.9;
+    overflow-x:hidden;
+    transition:0.5s;
+
+}
+
+.sideNav a{
+    padding: 10;
+    text-decoration: none;
+    font-size:1.3rem;
+    margin:30% 45%;
+    
+    font-weight:500;
+    color:#ccc;
+    display:block;
+    transition:0.3s;
+}
+
+
+.sideNav a:hover{
+
+    font-size:1.5rem;
+    color:red;
+    transition:0.3s;
+
+}
+
+.sideNav .buttonClosed{
+position:absolute;
+top:2%;
+left:85%;
+margin:0;
+font-size:3rem;
+}
+
+.sideNav .buttonClosed:hover{
+font-size:3.5rem;
+color:red;
+transition:0.3s;
+
+}
+
+.hamburgerMenuLine{
+    fill:none;
+    stroke:#999999;
+    stroke-width:3.7132;
+    stroke-miterlimit:10;
+}
+
+
+
+/* Main content & related elements */
+
+main{
+
+    width:100%;
+   margin-bottom:20%;
+    
+}
+
+#aboutContainer{
+   margin-left:0%;
+    margin-right:25%;
+    margin-top:10%;
+    display:flex;
+justify-content: space-between;
+
+}
+#aboutTextContainer{
+width:50%;
+
+}
+
+#aboutPicture{
+width:20%;
+height:450px;
+background-position: center;
+
+margin-right:8%;
+margin-left:21%;
+background: url(images/adams_photo_cropped.jpg);
+background-size: cover;
+box-shadow : -2px 2px 5px rgba(0, 0, 0, 0.25);
+
+}
+
+#aboutHeader{
+    font-size:1.5rem;
+    line-height:2.53rem;
+    font-weight:400;
+    margin-bottom: 5%;
+    }
+    
+    
+    #aboutBody{
+    font-size:.85rem;
+    line-height:2rem;
+    
+    }
+
+
+/* Footer & Footer elements */
+
+footer{
+
+   
+    width:100%;
+    
+    
+   
+    padding: 0 150px;
+    padding-bottom: 50px;
+}
+
+/* Additional Footer Container*/
+#footerContainer{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+/* Footer divider */
+#dividerContainer{
+width:100%;
+
+}
+
+#divider{
+
+background-color:#1a1a1a;
+height:1.3px;
+margin:30px 80px;
+
+}
+
+
+/*SVG arrow Style */
+.dt0{
+    fill:none;
+    stroke:#333333;
+    stroke-width:2.5578;
+    stroke-miterlimit:10;
+}
+
+#footerArrow{
+    width:1.7%;
+margin:auto;
+margin-bottom:20px;
+
+}
+
+/*Div containing the text */
+#summaryAboutGrant{
+    width:32%;
+    
+ 
+}
+
+/* Footer text elements */
+#summaryHeader{
+font-family: 'Roboto';
+font-size:2rem;
+font-weight:700;
+margin-bottom: 20px;
+}
+
+#summaryText{
+    font-family: 'Roboto';
+    font-size:1rem;
+    line-height: 2rem;
+    font-weight:400;
+    margin-bottom: 25px;
+
+}
+
+#emailButton{
+    
+    background-color: #1a1a1a;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+    cursor: pointer;
+}
+
+
+#emailText{
+    font-family: 'Roboto';
+    font-size:1rem;
+    font-weight:500;
+    color:#efefef;
+    
+}
+
+
+#backgroundTextFooter{
+    font-size:10rem;
+    font-weight: 700;
+    opacity: .08;
+    color:#1a1a1a;
+    position:relative;
+    top:-32%;
+    left:-70%;
+    
+}
+
+/*Footer link elements */
+
+#redirectionLinks{
+
+    padding: 9% 0;
+}
+
+#linkContainer{
+    display:flex;
+    justify-content: space-between;
+    width:500px;
+}
+
+.footerLink{
+    font-family: 'Roboto';
+    font-size:1.15rem;
+    color:rgba(0,0,0,.4);
+    
+    font-weight:700;
+    cursor: pointer;
+    
+ 
+
+}
+
+
+/*Copyright tag */
+
+#copyright{
+    font-size: .85rem;
+    
+    margin-top: 3%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Phone View Media Queries */
+
+@media only screen and  (max-width: 992px){
+/*General Changes */
+    html{
+font-size:14px
+
+    }
+
+/*Nav Bar Content */
+#logoContainer{
+    display:none;
+}
+
+#navContentContainer{
+margin: 0 15%;
+}
+
+
+#Branding{
+    width:100%;
+}
+
+#logoName{
+    font-weight:700;
+}
+
+#portfolioNavigationLinks{
+display:none;
+
+}
+
+
+#hamburgerMenu{
+    display:block;
+    width:9%;
+}
+
+.hamburgerMenuLine{
+    display:block;
+    stroke:rgba(0,0,0,.8);
+}
+
+
+/*Main / About Content */
+
+
+main{
+    margin-bottom:12%;
+    margin-top:20%;
+}
+
+
+
+#aboutContainer{
+
+    margin: 0 12%;
+    display:block;
+}
+
+#aboutPicture{
+    display:none;
+}
+
+#aboutTextContainer{
+    width:100%;
+}
+
+#aboutHeader{
+    font-weight:600;
+}
+
+
+
+
+
+
+
+
+/* Footer Content */
+
+footer{
+
+padding:0 14%;
+padding-bottom: 20px;
+}
+
+
+    #footerContainer{
+display:block;
+
+
+}
+
+#footerArrow{
+    width:4%;
+    margin-bottom: 4%;
+}
+
+.footerLink{
+    font-size:.90rem;
+    
+}
+
+#summaryAboutGrant{
+    width:100%;
+}
+
+#summaryText{
+    margin-bottom:5%;
+}
+
+
+
+#summaryHeader{
+    font-size:1.5rem;
+}
+
+#summaryText{
+
+    font-size:.75rem;
+    line-height:1.5rem;
+}
+
+#emailButton{
+    margin-top:7%;
+    display:block;
+    
+    }
+
+    
+#emailText{
+
+    font-size:.8rem;
+}
+
+
+#redirectionLinks{
+    padding-top:15%;
+    padding-bottom:4%;
+}
+
+#linkContainer{
+    width:100%;
+}
+
+
+#copyright{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size:.65rem;
+}
+
+#backgroundTextFooter{
+    display:none;
+}
+
+}
