@@ -80,16 +80,18 @@
 
     </div>
     <script>
-        let poem = ("poem.txt");
+        let poem = ("mypoem.txt");
         let verse = ("verse1")  // sets default verse element
         let verseString = (poem + " #" + verse);
+        console.log(verseString);
    $("#verse-choose").val(verse); // changes menu option to default
 //The load property only takes 1 string.
 $("#selectedverse").load(verseString);   // retrieves only default element
         
 $("#verse-choose").change(function() {
     
-    verseString = $(this).val();
+    verse = $(this).val();
+    verseString = (poem + " #" + verse);
     $("#selectedverse").load(verseString); 
     console.log(verseString);
 });
