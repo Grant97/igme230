@@ -93,7 +93,7 @@ display:none;
 #portfolioNavigationLinks{
     display:flex;
     justify-content: space-between;
-    width:25%;
+    width:40%;
     margin: 2% 0;
 }
 

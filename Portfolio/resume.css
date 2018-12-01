@@ -96,7 +96,7 @@ display:none;
 #portfolioNavigationLinks{
     display:flex;
     justify-content: space-between;
-    width:25%;
+    width:40%;
     margin: 2% 0;
 }
 
@@ -807,4 +807,49 @@ display:block;
     display:none;
 }
 
+}
+
+/*Resume Print Screen */
+
+@media print{
+
+
+nav{
+    display:none;
+}
+
+#GridFooter{
+    display:none;
+}
+
+#resumeOpening{
+    display:none;
+}
+
+
+#resumeContainer{
+    margin: 0 50px;
+margin-top:10%;
+
+}
+
+#experienceSmallDivider1{
+    height:2pt;
+}
+
+#cardBody ol{
+    margin-bottom:3%;
+}
+
+footer{
+    display:none;
+}
+
+#titleCard{
+    width:100%;
+}
+
+#titleCardBody{
+    font-size: .8rem;
+}
 }
