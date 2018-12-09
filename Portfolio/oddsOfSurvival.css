@@ -284,7 +284,7 @@ font-weight: 300;
 
 }
 
-#videoPlayer{
+.videoPlayer{
     margin: 15% 0;
 width:100%;
 
@@ -748,7 +748,7 @@ main{
     margin-bottom:10%;
 }
 
-#videoPlayer{
+.videoPlayer{
     margin:0;
     margin:5% 0;
     width:90vw;
