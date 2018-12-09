@@ -335,6 +335,32 @@ box-shadow : 5px 4px 4px rgba(0, 0, 0, 0.6);
    
 }
 
+#imageOuterOoS{
+    background:url(images/Greyed_Flow-10-100.jpg);
+    background-size:cover;
+    background-position:center;
+}
+
+#imageInnerOoS{
+    background:url(images/Flow-10-100\(Thumbnail\).jpg);
+    background-size:cover;
+    background-position:center;
+}
+
+
+#imageOuterBSC{
+    background:url(images/Greyed_Bite_Sized_Content.jpg);
+    background-size:cover;
+    background-position:center;
+}
+
+#imageInnerBSC{
+    background:url(images/Bite_Sized_Content.jpg);
+    background-size:cover;
+    background-position:center;
+}
+
+
 #imageOuterEverydays{
     background:url(images/Everyday12.31.18.png);
     background-size:cover;

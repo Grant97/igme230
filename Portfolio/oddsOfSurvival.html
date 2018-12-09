@@ -1,0 +1,644 @@
+<!DOCTYPE HTML>
+
+<html lang = "en">
+
+
+<head>
+    <!--Meta data for the page-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Links to external documents-->
+<link rel="stylesheet" href="oddsOfSurvival.css">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,300i,400,500,700" rel="stylesheet">
+
+
+<title>Grant Adams' Portfolio Redesign: Octane Everyday Page</title>
+
+</head>
+
+
+<body>
+    <!--Main page structure: Nav, Main, Footer-->
+
+
+<!--Nav bar element: contains Logo/name, & Redirection links -->
+
+<nav>
+       
+        <!--Container for the contents of the nav bar.-->
+    <div id="navContentContainer">
+    
+    <!--Container for the logo with my name-->
+    <div id="Branding">
+    
+            <div class="iconElement" id="logoContainer">
+        
+                    <!-- Container for my SVG logo design for responsive adjusting-->
+                <figure id = "logoSvgContainer">
+                
+            <svg id="portfolioLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" >
+                <style type="text/css">
+                    
+                </style>
+                <g>
+                    <g>
+                        <path class="st0" d="M52.05,1.1c0,0-43.02,5.33-43.02,14.51s34.18,10.81,34.18,23.07S19.09,60.91,19.09,68.8
+                            c0,12,20.96,9.98,20.96,9.98"/>
+                        <path class="st0" d="M52.13,1.1c0,0-40.01,5.33-40.01,14.51S46.3,26.42,46.3,38.68S22.17,60.91,22.17,68.8
+                            c0,12,20.96,9.98,20.96,9.98"/>
+                        <path class="st0" d="M52.21,1.1c0,0-37.01,5.32-37.01,14.51s34.18,10.81,34.18,23.07S25.26,60.91,25.26,68.8
+                            c0,12,20.96,9.98,20.96,9.98"/>
+                        <path class="st0" d="M52.29,1.1c0,0-34,5.32-34,14.51s34.18,10.81,34.18,23.07S28.34,60.91,28.34,68.8c0,12,20.96,9.98,20.96,9.98
+                            "/>
+                        <path class="st0" d="M52.37,1.1c0,0-30.99,5.32-30.99,14.51s34.18,10.81,34.18,23.07S31.43,60.91,31.43,68.8
+                            c0,12,20.96,9.98,20.96,9.98"/>
+                        <path class="st0" d="M52.45,1.1c0,0-27.99,5.32-27.99,14.51s34.18,10.81,34.18,23.07S34.51,60.91,34.51,68.8
+                            c0,12,20.96,9.98,20.96,9.98"/>
+                        <path class="st0" d="M52.53,1.1c0,0-24.98,5.32-24.98,14.51s34.18,10.81,34.18,23.07S37.6,60.91,37.6,68.8
+                            c0,12,20.96,9.98,20.96,9.98"/>
+                    </g>
+                    <g>
+                        <polygon class="st1" points="35.15,72.8 9.04,49.22 37.39,33.5 65.17,58.2 		"/>
+                        <polygon class="st2" points="37.39,33.5 44.64,8.8 18.9,22.27 9.04,49.22 		"/>
+                        <polygon class="st3" points="44.64,8.8 37.39,33.5 65.17,58.2 70.96,30.39 		"/>
+                    </g>
+                </g>
+                </svg>
+                
+                
+            </figure>
+                
+                
+                
+                </div>
+            
+                <!--My name that goes alongside my logo-->
+                <a href="index.html" alt="link back to the home page.">
+                        <h1 id="logoName">GRANT ADAMS</h1>
+                </a>
+    
+    
+    
+    
+    </div>
+    
+    <!--Hamburger Menu -->
+    <div id="hamburgerMenu">
+    <a href="#" onclick="openSlideMenu()">
+        <!-- svg of the menu-->
+    <svg version="1.1" id="hamburgerMenuIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+       
+           
+        <g>
+            <line class="hamburgerMenuLine" x1="2.5" y1="10.17" x2="47.37" y2="10"/>
+            <line class="hamburgerMenuLine" x1="2.57" y1="25.09" x2="47.43" y2="24.91"/>
+            <line class="hamburgerMenuLine" x1="2.63" y1="40" x2="47.5" y2="39.83"/>
+        </g>
+        </svg>
+        
+    </a>
+    
+    
+    
+    
+    </div>
+        
+        <!-- Div for the redirection links on my portfolio -->
+        <div id="portfolioNavigationLinks">
+                <a href="index.html">WORK</a>
+            <a href="demoReel.html">REEL</a>
+            <a href="aboutPage.html">ABOUT</a>
+            <a href="resume.html">RESUME</a>
+            <a href="documentation.html">DOCUMENTATION</a>
+        
+        
+        
+        </div>
+    
+    
+    </div>
+    
+        
+    
+    
+    
+    </nav>
+    
+    <!--Menu that appears upon clicking the hamburger menu-->
+    <div id="side-menu" class="sideNav">
+        <!-- Close Button -->
+        <a href="#" class="buttonClosed" onclick="closeSlideMenu()">&times;</a>
+    
+        <!--Links-->
+        <a href="index.html">WORK</a>
+        <a href="demoReel.html">REEL</a>
+        <a href="aboutPage.html">ABOUT</a>
+        <a href="resume.html">RESUME</a>
+    
+    
+    
+    </div>
+    
+    <!--Javascript for the opening and closing of the menus-->
+    <script>
+    
+    /*Short Function for giving the menu it's width */
+    function openSlideMenu(){
+        document.getElementById('side-menu').style.width = '100vw';
+       
+       
+    }
+    
+    /*Short Function for taking away the menu's width */
+    function closeSlideMenu(){
+        document.getElementById('side-menu').style.width = '0px';
+       
+    }
+    
+    </script>
+    
+
+
+
+
+
+<!--Main element of Portfolio home page: contains projects divs which contain project 
+imgs, text, and links -->
+<main>
+
+
+    
+<div id="workContainer">
+    
+    <!--(Put on Hold till Further Notice
+        (New Circa 12.4.18) Preview Image for the project
+<div id="previewImage">
+        
+    </div>
+
+-->
+
+<!--Opening Title & Description Flexbox-->
+        <div id="openingContainer">
+
+      <div id="openingInfo">
+
+        <h1 id="openingSubHeader">What's Your Odds?</h1>
+        <h1 id="openingHeader">Odds of Survival</h1>
+        <p class="mainText" id="descriptionText">Odds of survival is a wildife education app. designed to provide animal safety tips under the framing of how likely you are to survival an encounter with them.</p>
+      
+      </div>
+          
+            <div id="details">
+                    
+                <div>
+                    <p class="titleBold">ROLE</p>
+                    <p class="titleDescription">Concept, Visual Design & Interaction Design</p>
+                </div>
+
+                <div> <p class="titleBold">WHEN</p>
+                    <p class="titleDescription">Spring 2017</p>
+                </div>
+                   
+                <div>
+                    <p class="titleBold">CLIENT</p>
+                    <p class="titleDescription">School</p>
+                </div>
+
+            </div>
+           
+
+
+    </div>
+
+
+    
+    <!--Opening Video of Completed Project-->
+    <video id="videoPlayer"controls>
+        <source src="images/Post-Comp_1.mp4" type="video/mp4">
+
+
+</video>
+
+
+    
+<!--Sectional Containers: Problem Statement-->
+   <div class="sectionContainer">
+    <div class="sectionStatementSingleBox">
+        <h1 class="sectionSingleNumber">01</h1>
+        <h1 class="sectionStatement">Problem</h1>
+    </div>
+    <p class="sectionText">People aren’t engaged in nature, because engaing with nature has become optional. As such, many people lack important survvial skills</p>
+
+
+   </div>
+
+   <!--Research-->
+
+   <div class="sectionStatementSingleBox">
+        <h1 class="sectionSingleNumber">02</h1>
+        <h1 class="sectionStatement">Research</h1>
+    </div>
+
+    <h1 class="subHeader">
+            How do informational applications provide convinient access to information while still being visually engaing?
+    </h1>
+    
+    <p class="bodyText" id="researchText">When I began the creative process for Odds of Survival, I wanted to figure out how to create an application with a distinct visual style that is both informative and visually engaging. I mainly aimed my research around phone applications and interactive websites, as I find that they tend to have much more visually striking designs as they have to use them to engage new users in a very short amount of time.
+</p>
+
+<h1 class="subHeader">
+    Main Takeaways
+</h1>
+
+<div class="takeawayContainer">
+
+<div class="subContainer">
+    <div class="subText">
+        <h1 class="takeawayTitle">Large scale Database</h1>
+        <p class="bodyText" id="takeawayText">Many wildlife applications feature large-scale databases of animal that the curious user can select and learn about, in a quick and convinient way.
+
+        </p>
+    </div>
+    <div class="subText">
+            <h1 class="takeawayTitle">Interactive Article</h1>
+            <p class="bodyText" id="takeawayText">Interactive pages highlighting a specific animal, with overlayed video footage of the animal in their habitat, or some representation of that animal. 
+            </p>
+        </div>
+</div>
+
+<div class="subContainer">
+        <div class="subText">
+            <h1 class="takeawayTitle">Engaging Visualization</h1>
+            <p class="bodyText" id="takeawayText">Parts of an application that may have otherwise been mundane are given interactive and interesting visualization via particle effects, three dimensionality, etc, in order to capture user attention.
+            </p>
+        </div>
+        <div class="subText">
+                <h1 class="takeawayTitle">Effective Design</h1>
+                <p class="bodyText" id="takeawayText">Strong design principles and and well thought out layout, which leads to these reoccuring traits.  </p>
+                <ol>
+                        <li><p id="takeawaySubTitle">Panel based information Display</p></li>
+                        <li><p id="takeawaySubTitle">Strong type hierarchy</p></li>
+                        <li><p id="takeawaySubTitle">Proximity based data display</p></li>
+                </ol>
+                
+            </div>
+    </div>
+
+</div>
+
+
+    <!--Goals-->
+    <div class="sectionStatementSingleBox">
+            <h1 class="sectionSingleNumber">03</h1>
+            <h1 class="sectionStatement">Goals</h1>
+        </div>
+
+        <div class="subContainer">
+                <div class="subText">
+                    <h1 class="takeawayTitle" id="goalTitle">Survival Prep.</h1>
+                    <p class="bodyText" id="takeawayText">Many wildlife applications feature large-scale databases of animal that the curious user can select and learn about, in a quick and convinient way.
+            
+                    </p>
+                </div>
+                <div class="subText">
+                        <h1 class="takeawayTitle" id="goalTitle">Sating Curiosity</h1>
+                        <p class="bodyText" id="takeawayText">Interactive pages highlighting a specific animal, with overlayed video footage of the animal in their habitat, or some representation of that animal. 
+                        </p>
+                    </div>
+            </div>
+
+
+    <!--1st Iteration-->
+    <div class="sectionStatementSingleBox">
+            <h1 class="sectionSingleNumber">04</h1>
+            <h1 class="sectionStatement">Iterations</h1>
+        </div>
+
+        <h1 class="takeawayTitle" id="iterationTitle">#1. Scenario Creation</h1>
+        <p class="bodyText">My first iteration aimed to design Odds of Survival as mainly a scenario creation application, where users can create scenarios based on their location, what activity they are doing and when they are doing it. In return Odds of Survival would provide users with specialized animal information based on the animals you were the most likely to see in your area, and your Odds of Survival if you were to encounter them, along with additional survival info.</p>
+
+        <!--Iteration Images-->
+        <div class="imageContainer">
+            <a href="images/Home_Screen.jpg">
+                <img src="images/Home_Screen.jpg" class="iterationImage" title="Iteration #1 image.">
+            </a>
+            <a href="images/Screen_2.jpg">
+                <img src="images/Screen_2.jpg" class="iterationImage" title="Iteration #1 image.">
+            </a>
+
+        </div>
+
+
+        <div class="imageContainer">
+                <a href="images/Screen_3.jpg">
+                    <img src="images/Screen_3.jpg" class="iterationImage" title="Iteration #1 image.">
+                </a>
+                <a href="images/Screen_4.jpg">
+                    <img src="images/Screen_4.jpg" class="iterationImage" title="Iteration #1 image.">
+                </a>
+    
+            </div>
+
+
+            <!--2nd Iteration-->
+   
+        <h1 class="takeawayTitle" id="iterationTitle">#2. Geographically Centered Info.</h1>
+        <p class="bodyText">The second iteration was very similar to my final composition. In this iteration the user would be launched right into the view of a U.S. map where they could tap a state and find different animal related incidents. Accompanying this paradigm was a database system, where users could look up specific animals in alphabetical order or under different categories, such as most dangerous, or most aggressive.</p>
+
+        <!--Iteration Images-->
+        <div class="imageContainer">
+            <a href="images/2nd_Screen_1.jpg">
+                <img src="images/2nd_Screen_1.jpg" class="iterationImage" title="Iteration #1 image.">
+            </a>
+            <a href="images/2nd_Screen_2.jpg">
+                <img src="images/2nd_Screen_2.jpg" class="iterationImage" title="Iteration #1 image.">
+            </a>
+
+        </div>
+
+
+        <div class="imageContainer" id="lastImageContainer">
+                <a href="images/2nd_Screen_3.jpg">
+                    <img src="images/2nd_Screen_3.jpg" class="iterationImage" title="Iteration #1 image.">
+                </a>
+                <a href="images/2nd_Screen_4.jpg">
+                    <img src="images/2nd_Screen_4.jpg" class="iterationImage" title="Iteration #1 image.">
+                </a>
+    
+            </div>
+
+        
+        <!--Solution-->
+        <div class="sectionContainer" id="mockUpContainer">
+                <div class="sectionStatementBox">
+                    <h1 class="sectionNumber">05</h1>
+                    <h1 class="sectionStatement">Solution</h1>
+                </div>
+                <p class="sectionText">Upon critique from my peers, I found that I was going in the right direction, but I needed to expand upon this direction, and give it a more striking visual style.</p>
+            
+            
+               </div>
+
+               <a href="images/View-2.jpg">
+                <img src="images/View-2.jpg" id="mockUp">
+            </a>
+
+            
+        <!--Feature Highlights-->
+            <div class="highLightContainer">
+                    <img src="images/Map_View.jpg" id="highLightImage">
+                    <div class="highLightText">
+                        <h1 class="highLightOpener">FEATURE HIGHLIGHTS</h1>
+                        <h1 class="highLightTitle">Learn about the animals in your area.</h1>
+                        <p class="bodyText">Sweep through animal related incidents near you with the map view. Just select your desired state, and you'll be able to learn how often animal related incidents happen during any season.</p>
+
+                    </div>
+            </div>
+
+           
+            <div class="highLightContainer">
+                    <div class="highLightText">
+                            
+                            <h1 class="highLightTitle">Animal safety info right at your finger tips.</h1>
+                            <p class="bodyText">Upon selecting an animal you'll be able to learn about preventative measures to ensure your safety, directions in case of an encounter and general info about the animal.</p>
+    
+                        </div>   
+                
+                
+                <img src="images/Prevent_Info.jpg" id="highLightImage">
+                    
+            </div>
+
+           
+           
+           
+            <div class="highLightText" id="fullScreenHighLightText">
+                            
+                    <h1 class="highLightTitle">Gain intimate knowledge of your selected animal.</h1>
+                    <p class="bodyText">Get to know what your selected animals look like with 3-D recreations of them on their general info page. In addition learn about iconic traits of the animal with the highlight system, which provides interactive reticles on key parts of the 3-D animal's body.</p>
+
+                </div>   
+        
+        
+        <img src="images/Animal_Info.jpg" id="highLightFullImage">
+        
+
+
+        <!--Final Comps-->
+
+        <div class="sectionStatementSingleBox">
+                <h1 class="sectionSingleNumber">06</h1>
+                <h1 class="sectionStatement">Final Comps</h1>
+            </div>
+
+
+
+
+            <div class="finalImageContainer">
+                    <a href="images/Flow 1-100.jpg">
+                        <img src="images/Flow 1-100.jpg" class="finalImage">
+                    </a>
+                    <a href="images/Flow 2-100.jpg">
+                        <img src="images/Flow 2-100.jpg" class="finalImage">
+                    </a>
+                    <a href="images/Flow 3-100.jpg">
+                        <img src="images/Flow 3-100.jpg" class="finalImage">
+                    </a>
+                    <a href="images/Flow 4-100.jpg">
+                        <img src="images/Flow 4-100.jpg" class="finalImage">
+                    </a>
+                
+
+            </div>
+
+
+
+
+
+            <div class="finalImageContainer">
+                    <a href="images/Flow 5-100.jpg">
+                        <img src="images/Flow 5-100.jpg" class="finalImage">
+                    </a>
+                    <a href="images/Flow 6-100.jpg">
+                        <img src="images/Flow 6-100.jpg" class="finalImage">
+                    </a>
+                    <a href="images/Flow 7-100.jpg">
+                        <img src="images/Flow 7-100.jpg" class="finalImage">
+                    </a>
+                    <a href="images/Flow 8-100.jpg">
+                        <img src="images/Flow 8-100.jpg" class="finalImage">
+                    </a>
+                
+
+            </div>
+
+
+            <div class="finalImageContainer">
+                    <a href="images/Flow 9-100.jpg">
+                        <img src="images/Flow 9-100.jpg" class="finalImage" id="lastRowImage">
+                    </a>
+                    <a href="images/Flow 10-100.jpg">
+                        <img src="images/Flow 10-100.jpg" class="finalImage" id="lastRowImage">
+                    </a>
+                    <a href="images/Flow 11-100.jpg">
+                        <img src="images/Flow 11-100.jpg" class="finalImage" id="lastRowImage">
+                    </a>
+                    
+                
+
+            </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Footer starts here-->
+
+ <!-- Graphical divider Separating the footer from the body -->
+ <!-- Adding a container to the divider so I can create margins in the div so that
+it doesn't just fill the entire width of the screen -->
+
+<!--Adding another Div to encase the divider with the 
+footer so that they're both in the grid-->
+<div id="GridFooter">
+        <section id ="dividerContainer">
+                <section id="divider"></section>
+        </section>
+        
+        
+        
+        
+         <!-- SVG Arrow to redirect to the top of the screen-->
+        
+         <a title="Scroll to the Top" href=#top >
+        
+            <figure class="iconElement" id="footerArrow">
+               
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20" >
+                    <polyline class="dt0" points="26,16.66 14.63,5 4,16.66 "/>
+                    </svg>
+                    
+        </figure>
+        
+        
+         </a>
+        
+          
+        
+        <!--Actual start of the footer-->
+        <footer>
+        
+            <!--Graphical Elements-->
+            
+           
+        
+        
+            
+          
+           
+        
+        <!-- Created an additional footer container to fix the padding issue when floating
+        the summary-->
+            <div id = "footerContainer">
+        
+            <!--Section containing text elements-->
+        <div id = "summaryAboutGrant">
+                <h1 id ="summaryHeader">Hey reader!</h1>
+                <p id = "summaryText">The name’s Grant Adams, I’m a motion graphics designer who is passionate about 2-D & 3-D animation. I love meeting new people, so feel free to send me an email if you want to learn more about me and my work!</p>
+                
+                <!--Email link button-->
+                <a href="mailto:gaa6230@g.rit.edu" alt="">
+                        <section id = "emailButton"> 
+                                <p id = "emailText">The Magical copy my email button</p>
+                            
+                            </section>
+        
+        
+                </a>
+        
+           
+                </div>
+                
+                
+                
+                <div id = "redirectionLinks">
+              
+                    <!--Adding a container for the links in order to create a flexbox
+                    to evenly space the links-->
+                    <div id = "linkContainer">
+        
+                            <a href="https://www.behance.net/adamsgrantf3f2" alt="Link to my Behance"><p class = "footerLink">Behance</p> </a>
+                            <a href="https://www.linkedin.com/in/grant-adams-44baa7105/" alt="Link to my Linkedin"><p class = "footerLink">Linkedin</p> </a>
+                            <a href="https://twitter.com/" alt="Currently don't have an active twitter so you'll just go go regular twitter.Link to twitter"><p class = "footerLink">Twitter</p> </a>
+                            <a href="https://vimeo.com/user79236428" alt="Link to my Vimeo"><p class = "footerLink">Vimeo</p> </a>
+                            
+            
+        
+                </div>
+                    
+                
+                </div>
+            </div>
+                
+                
+        
+        
+        
+            <div id= "copyright">© 2018 - Design / Code by Grant Adams</div>
+        
+        
+            </div>
+        
+        </footer>
+    </div>
+    
+    
+    <!--  <h1 id = "backgroundTextFooter">What's Up</h1>   -->
+    
+
+</body>
+
+
+
+
+
+
+
+
+</html>
