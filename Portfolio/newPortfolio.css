@@ -747,6 +747,27 @@ grid-row: 1 / 3;
 
 }
 
+#mobileContentImageA{
+    width:100%;
+    height:250px;
+    background:url(images/OoS_Thumbnail2.jpg);
+    margin-bottom:8%;
+    background-size:cover;
+    background-position: center;
+}
+
+
+#mobileContentImageB{
+    width:100%;
+    height:250px;
+    background:url(images/BsC_Mockup.jpg);
+    margin-bottom:8%;
+    background-size:cover;
+    background-position: center;
+}
+
+
+
 #mobileContentImage{
     width:100%;
     height:250px;
