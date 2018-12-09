@@ -278,7 +278,7 @@ font-weight: 300;
 
 }
 
-#imageGallery{
+.imageGallery{
     display:flex;
     justify-content: space-between;
     margin-bottom:5%;

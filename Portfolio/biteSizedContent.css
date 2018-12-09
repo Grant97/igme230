@@ -373,7 +373,7 @@ justify-self: center;
     font-weight: 600;
     color:#9e9e9e;
 }
-#takeawayText{
+.takeawayText{
     width:80%;
     margin-bottom:10%;
 }
@@ -429,7 +429,7 @@ justify-self: center;
 
 }
 
-#highLightImage{
+.highLightImage{
     width:50%;
 }
 
@@ -463,7 +463,7 @@ justify-self: center;
     margin-bottom:3%;
 }
 
-#highLightImage{
+.highLightImage{
     box-shadow: 0px 5px 9px 0px rgba(0,0,0,.2);
 }
 
@@ -843,7 +843,7 @@ width:90vw;
     width:90vw;
 }
 
-#highLightImage{
+.highLightImage{
     width:90vw;
     margin-right:0;
     margin-top:10%;
