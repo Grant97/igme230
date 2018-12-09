@@ -296,7 +296,7 @@ font-weight:300;
 
 }
 
-#experienceSmallDivider1{
+.experienceSmallDivider1{
 width:1%;
 height:1px;
 margin:10px 0;
@@ -304,14 +304,14 @@ background-color:#1a1a1a;
 
 }
     
-#experienceSmallDivider2{
+.experienceSmallDivider2{
     width:1%;
     height:1px;
     margin:10px 0;
     background-color:#1a1a1a;
 }
     
-#experienceSmallDivider3{
+.experienceSmallDivider3{
     width:1%;
     height:1px;
     margin:10px 0;
@@ -353,7 +353,7 @@ padding:3%;
 
 /* Education Card Elements */
 
-#cardContainer{
+.cardContainer{
    
    margin-top:6%;
    margin-bottom:6%;
@@ -364,7 +364,7 @@ padding:3%;
  
 }
 
-#cardOpening{
+.cardOpening{
 
     display:flex;
     justify-content: space-between;
@@ -373,13 +373,13 @@ padding:3%;
 }
 
 
-#cardCardHeader{
+.cardCardHeader{
     font-size:1.1rem;
     font-weight:300;
     color:rgba(0,0,0,.8);
 }
 
-#cardDivider{
+.cardDivider{
     height:1px;
     background-color:#1a1a1a;
     width:60%;
@@ -387,7 +387,7 @@ padding:3%;
 
 }
 
-#cardSmallDivider1{
+.cardSmallDivider1{
 width:1%;
 height:1px;
 margin:10px 0;
@@ -395,7 +395,7 @@ background-color:#1a1a1a;
 
 }
     
-#cardSmallDivider2{
+.cardSmallDivider2{
     width:1%;
     height:1px;
     margin:10px 0;
@@ -404,13 +404,14 @@ background-color:#1a1a1a;
 
 
     
-#cardBody{
+.cardBody{
     margin-top:2%;
 }
 
-ol{
+li{
     margin-bottom:5px;
     font-size:.9rem;
+    list-style-type: none;
 
 }
 
@@ -673,23 +674,23 @@ margin: 0 12%;
 }
 
 
-#experienceSmallDivider1{
+.experienceSmallDivider1{
     display:none;
 }
 
 
-#experienceSmallDivider2{
+.experienceSmallDivider2{
     display:none;
 }
 
-#cardDivider{
+.cardDivider{
     height:0.4px;
 }
-#cardSmallDivider1{
+.cardSmallDivider1{
     display:none;
 }
 
-#cardSmallDivider2{
+.cardSmallDivider2{
     display:none;
 }
 
@@ -833,11 +834,11 @@ margin-top:10%;
 
 }
 
-#experienceSmallDivider1{
+.experienceSmallDivider1{
     height:2pt;
 }
 
-#cardBody ol{
+.cardBody ol{
     margin-bottom:3%;
 }
 
