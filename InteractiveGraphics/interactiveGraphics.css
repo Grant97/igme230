@@ -1,0 +1,198 @@
+/* CSS Stylesheet used for the webpage  */
+
+
+/* Removing default margins */
+*{
+    margin:0;
+}
+
+
+/* General Html styling */
+html{
+    font-size:16px;
+    font-weight:200;
+    font-family: 'Roboto';
+    overflow:auto;
+}
+
+
+
+/* Removing decoration on all links */
+a{
+    text-decoration:none;
+}
+
+/*CSS Grid */
+body{
+    display:grid; 
+    grid-template-rows: 1% 1fr;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-areas: 
+    ". header ."
+    ". main .";
+
+}
+
+/* Navigational Bar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0;
+    grid-area: header;
+    width:100%;
+    
+    
+}
+
+
+
+
+    nav a:nth-child(1){
+        animation: slideDown 2s ease-out  0s normal;
+    }
+
+    nav a:nth-child(2){
+        animation: slideDown 2s ease-out .2s normal;
+    }
+
+    nav a:nth-child(3){
+        animation: slideDown 2s ease-out .4s normal;
+    }
+
+    nav a{
+        font-size: 1rem;
+        font-weight: 200;
+        color:#1a1a1a;
+        animation: slideDown 2s ease-out .6s normal;
+        transition: all .40s ease-out;
+        
+        }
+
+
+    nav a:hover{
+        font-weight: 600;
+        font-size:1.25rem;
+        transition: all .40s ease-out;
+
+
+    }
+
+    /* Animation */
+
+    /* Animation used in Nav Slide Down */
+    @keyframes slideDown{
+        0% {transform: translateY(-500px);}
+        
+        100% {transform: translateY(0);}
+    }
+
+    /* Animation used in Onboard Slide from left Side */
+    @keyframes sideSlide{
+        0% {transform: translateX(-750px);}
+        
+        100% {transform: translateX(0);}
+    }
+
+
+/* Page Main content */
+#mainContainer{
+   
+   margin-top:5%;
+    grid-area: main;
+    height:500px;
+    
+    display:flex;
+    justify-content: space-between;
+}
+
+
+/* Onboarding Content */
+#onboardingContainer{
+    margin-right: 3%;
+    display:flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.textContainer{
+    margin-bottom: 30%;
+
+}
+
+.textContainer  a{
+    font-weight: 200;
+    opacity:.6;
+    color:#1a1a1a;
+    transition: all .40s ease-out;
+    
+    
+}
+
+.textContainer a:hover{
+   font-size:1.5rem;
+   font-weight:600;
+   opacity:1;
+   transition: all .40s ease-out;
+    
+
+}
+
+/* Text Container Animation */
+.textContainer a:nth-child(3){
+    animation: sideSlide 2s ease 0s normal;
+
+}
+
+.textContainer a:nth-child(2){
+    animation: sideSlide 2s ease .1s normal;
+
+}
+
+.textContainer a:nth-child(1){
+    animation: sideSlide 2s ease .2s normal;
+
+}
+
+.textContainer a{
+    animation: sideSlide 2s ease .3s normal;
+
+}
+
+
+/* Content Onboarding */
+h1{
+    font-size:3.75rem;
+    font-weight:600;
+}
+
+#transitionLink:hover{
+    font-size:1.6rem;
+    transition: all .40s ease-out;
+}
+
+#transitionLink{
+    font-size: 1.4rem;
+    font-weight:600;
+    color:#1a1a1a;
+    transition: all .40s ease-out;
+}
+
+
+
+/* Canvas Element */
+
+#workContainer{
+    width:45%;
+    padding-right: 8%;
+}
+
+.paragraphContainer p{
+   margin-top:6%;
+    line-height: 2rem;
+}
+
+#transitionLink{
+    margin-top: 5%;
+}
+
+

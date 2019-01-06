@@ -1,0 +1,10 @@
+Webgl-
+
+
+What do I understand,
+How to set up a webgl context
+Utilizing and calling from a HTML Canvas
+
+What I don't understand or need to learn
+How Webgl works specificallyccc
+Essential Webgl language
