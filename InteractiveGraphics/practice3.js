@@ -6900,7 +6900,9 @@ var forEach = exports.forEach = function () {
 //Actual code starts here 
 //Referenced from Mozilla's Webgl Tutorial
 
-var squareRotation = 0.0;
+var squareRotation = 5;
+var sampleX = 0;
+var sampleY = 1;
 
 main();
 
@@ -6911,6 +6913,7 @@ function main() {
   const canvas = document.querySelector('#drawArea');
   const gl = canvas.getContext('webgl');
 
+  canvas.getBoundingClientRect();
   // If we don't have a GL context, give up now
 
   if (!gl) {
@@ -7019,7 +7022,7 @@ function initBuffers(gl) {
   // Now set up the colors for the vertices
 
   const colors = [
-    1.0,  1.0,  1.0,  1.0,    // white
+    sampleX,  1.0,  1.0,  1.0,    // white
     1.0,  0.0,  0.0,  1.0,    // red
     0.0,  1.0,  0.0,  1.0,    // green
     0.0,  0.0,  1.0,  1.0,    // blue
@@ -7076,13 +7079,14 @@ function drawScene(gl, programInfo, buffers, deltaTime) {
   // Now move the drawing position a bit to where we want to
   // start drawing the square.
 
+
   mat4.translate(modelViewMatrix,     // destination matrix
                  modelViewMatrix,     // matrix to translate
                  [-0.0, 0.0, -6.0]);  // amount to translate
   mat4.rotate(modelViewMatrix,  // destination matrix
               modelViewMatrix,  // matrix to rotate
               squareRotation,   // amount to rotate in radians
-              [0, 0, 1]);       // axis to rotate around
+              [sampleX, sampleY, 1]);       // axis to rotate around
 
   // Tell WebGL how to pull out the positions from the position
   // buffer into the vertexPosition attribute
