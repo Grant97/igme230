@@ -25,11 +25,12 @@ a{
 /*CSS Grid */
 body{
     display:grid; 
-    grid-template-rows: 1% 1fr;
+    grid-template-rows: 1% 1fr 1fr;
     grid-template-columns: 5% 1fr 5%;
     grid-template-areas: 
     ". header ."
-    ". main .";
+    ". main ."
+    ". footer .";
 
 }
 
@@ -105,6 +106,46 @@ nav{
     justify-content: space-between;
 }
 
+/*Mobile View Messagge */
+#mobileMessage{
+    display:none;
+}
+
+
+/* Footer Content */
+
+footer{
+    margin-top:5%;
+        grid-area: footer;
+}
+
+/* Sources */
+#sources{
+    display:flex;
+    flex-direction: column;
+    align-content: space-between;
+
+}
+
+#sources h1{
+    font-size: 2rem;
+}
+
+#sources  a{
+    
+    font-size:1rem;
+        font-weight:200;
+        margin: 1% 0;
+    transition: all .40s ease-out;
+
+}
+
+#sources a:hover{
+    font-size:1.25rem;
+    font-weight:600;
+    transition: all .40s ease-out;
+
+}
 
 /* Onboarding Content */
 #onboardingContainer{
@@ -114,6 +155,7 @@ nav{
     align-content: space-between;
 }
 
+/* Side Text Links */
 .textContainer{
     margin-bottom: 30%;
 
@@ -195,4 +237,60 @@ h1{
     margin-top: 5%;
 }
 
+
+
+@media only screen and  (max-width: 992px){
+
+    body{
+       display:block;
+        
+    }
+    nav{
+        display: none;
+
+    }
+
+    #sources{
+        display: none;
+    }
+
+    #mainContainer{
+        display: none;
+    }
+
+    #workContainer{
+        display: none;
+    }
+
+    #webGLPorts{
+        display: none;
+    }
+
+    #mobileMessage{
+        display:block;
+        text-align:center;
+        margin:30% 5%;        
+    }
+
+    #mobileMessage h1{
+        font-size: 1.3rem;
+    }
+    #mobileMessage a{
+        cursor: pointer;
+        margin-top:50px;
+        font-weight:300;
+       
+    
+    
+        transition: all .40s ease-out;
+    }
+
+    
+    #mobileMessage a:hover{
+    font-size:1.25rem;
+    font-weight:600;
+    transition: all .40s ease-out;
+
+}
+}
 
