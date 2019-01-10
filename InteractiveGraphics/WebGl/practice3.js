@@ -6900,9 +6900,70 @@ var forEach = exports.forEach = function () {
 //Actual code starts here 
 //Referenced from Mozilla's Webgl Tutorial
 
-var squareRotation = 5;
+var rando = Math.random();
+console.log(rando);
+var rando1 = Math.random();
+console.log(rando1);
+var rando2 = Math.random();
+console.log(rando2);
+
+
+var rSpeed = document.querySelector('#rotationSpeed');
+var xRot = document.querySelector('#xRotation');
+var yRot = document.querySelector('#yRotation');
+var reset = document.querySelector('#reset');
+
+var squareRotation = 10;
 var sampleX = 0;
-var sampleY = 1;
+var sampleY = 0;
+
+
+
+
+rSpeed.onclick =function(){
+squareRotation + 100;
+console.log('The square Rotation is currently ' + squareRotation);
+drawScene(gl, programInfo, buffers, deltaTime);
+
+  requestAnimationFrame(render);
+return squareRotation;
+
+
+};
+
+xRot.onclick =function(){
+  
+  sampleX++; 
+  console.log('The x axis is ' + sampleX);
+  if (sampleX > 9){
+    sampleX = 0;
+  }
+  return sampleX;
+  };
+
+  yRot.onclick =function(){
+    sampleY++; 
+    console.log('The y axis is ' + sampleY);
+    
+    if (sampleY > 12){
+      sampleY = 0;
+    }
+    return sampleY;
+    
+    };
+
+    reset.onclick = function(){
+      sampleX = 0;
+      sampleY = 0;
+      squareRotation = 0;
+      rando = 1.0;
+      rando1 = 1.0;
+      rando2 = 1.0;
+      return sampleX, sampleY, squareRotation, rando, rando1, rando2;
+
+    }
+
+  
 
 main();
 
@@ -7022,10 +7083,10 @@ function initBuffers(gl) {
   // Now set up the colors for the vertices
 
   const colors = [
-    sampleX,  1.0,  1.0,  1.0,    // white
-    1.0,  0.0,  0.0,  1.0,    // red
-    0.0,  1.0,  0.0,  1.0,    // green
-    0.0,  0.0,  1.0,  1.0,    // blue
+    1.0,  1.0,  1.0,  1.0,    // white
+    rando,  0.0,  0.0,  1.0,    // red
+    0.0,  rando1,  0.0,  1.0,    // green
+    0.0,  0.0,  rando2,  1.0,    // blue
   ];
 
   const colorBuffer = gl.createBuffer();
@@ -7152,6 +7213,7 @@ function drawScene(gl, programInfo, buffers, deltaTime) {
   // Update the rotation for the next draw
 
   squareRotation += deltaTime;
+  
 }
 
 //
