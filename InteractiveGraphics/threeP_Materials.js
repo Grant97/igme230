@@ -42,7 +42,24 @@ function start() {
 
     //Texture Loader
     var loader = new THREE.TextureLoader();
-    planeMaterial.map = loader.load('images/Marble13_COL_6K.jpg');
+    planeMaterial.map = loader.load('images/concrete.jpg');
+    planeMaterial.bumpMap = loader.load('images/concrete.jpg');
+    planeMaterial.bumpScale = 0.01;
+
+
+    var maps = ['map', 'bumpMap'];
+    maps.forEach(function(mapName) {
+        
+    //This will make the texture x and y repeat, at a 1.5 frequency
+    
+
+		var texture = planeMaterial[mapName];
+		texture.wrapS = THREE.RepeatWrapping;
+		texture.wrapT = THREE.RepeatWrapping;
+		texture.repeat.set(1.5, 1.5);
+	});
+    
+   
     
 
 	// dat.gui

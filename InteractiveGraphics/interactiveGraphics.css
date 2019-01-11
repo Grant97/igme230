@@ -157,7 +157,7 @@ footer{
 
 /* Side Text Links */
 .textContainer{
-    margin-bottom: 30%;
+    margin-bottom: 15%;
 
 }
 
@@ -171,7 +171,7 @@ footer{
 }
 
 .textContainer a:hover{
-   font-size:1.5rem;
+   font-size:1.15rem;
    font-weight:600;
    opacity:1;
    transition: all .40s ease-out;
