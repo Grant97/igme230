@@ -110,10 +110,6 @@ function start() {
     folder3.add(planeMaterial, 'metalness', 0, 1);
     folder3.open();
 
-    var folder4 = gui.addFolder('sphere');
-    folder3.add(sphere.scale,'x', -5, 5);
-    folder4.open();
-
 	// add objects to the scene
 	scene.add(sphere);
 	scene.add(plane);
